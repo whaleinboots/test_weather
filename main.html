@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날씨앱01_main</title>
+
+    <link rel="stylesheet" href="css/weather01.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/weather01.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="city">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city">gimpo</span>
+            </div>
+
+            <h1 class="temp">
+                <span id="temp">25</span><span class="small">°</span>
+            </h1>
+            <div class="descript">
+                <p id="descipt">
+                    It's sunny
+                </p>
+            </div>
+
+        </div>
+
+
+
+        <div class="detail">
+            <div class="detail-top"></div>
+            <div class="detail-body">
+                <h1 class="text-center">Weather Today</h1>
+                <div class="today-box">
+                    <ul>
+                        <li><label><i class="wi wi-barometer"></i>최저</label>-50°</li>
+                        <li><label><i class="wi wi-refresh-alt"></i>최고</label>100°</li>
+                        <li><label><i class="wi wi-thermometer"></i>습도</label>15%</li>
+                    </ul>
+                    <ul>
+                        <li><label><i class="wi wi-sunrise"></i>해뜨는시각</label>am 07:00</li>
+                        <li><label><i class="wi wi-sunset"></i>해지는시각</label>pm 05:00</li>
+                        <li><label><i class="wi wi-strong-wind"></i>바람</label>8m/s</li>
+                    </ul>
+                </div>
+
+
+                <!--five day-->
+                <div class="five-day">
+                    <div class="three-times">
+                        <div class="five-date">15일</div>
+                        <div class="five-date">00시 00분</div>
+                        <div class="five-icon">
+                            <img src="images/01d.png" alt="day" class="img-fluid">
+                        </div>
+                        <p class="five-temp">25°</p>
+                        <p class="five-descript">sunny day</p>
+
+                    </div>
+                </div>
+                <!--loop end-->
+            </div>
+        </div>
+        <div class="searchbox">
+            <form action="">
+                <input type="search" name="search" placeholder="도시검색...">
+                <a href="#" class="btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
